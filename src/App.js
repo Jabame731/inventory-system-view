@@ -1,7 +1,11 @@
-import './App.css';
+import Login from './pages/Login';
 
 function App() {
-  return <div className='text-3xl font-bold underline'>HLOY</div>;
+  return (
+    <div>
+      <Login />
+    </div>
+  );
 }
 
 export default App;

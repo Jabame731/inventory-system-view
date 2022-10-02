@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../assets/signin-image.jpg';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -35,18 +36,23 @@ const Login = () => {
                   />
                 </div>
               </div>
-              <button
-                type='submit'
-                className='block w-full px-5 py-3 text-sm font-medium text-white bg-indigo-600 rounded-lg mt-5 '
-              >
-                Sign in
-              </button>
+              <Link to='/'>
+                <button
+                  type='submit'
+                  className='block w-full px-5 py-3 text-sm font-medium text-white bg-indigo-600 rounded-lg mt-5 '
+                >
+                  Sign in
+                </button>
+              </Link>
               <div className='flex justify-between'>
                 <p className='text-xs sm:text-sm text-center text-gray-500 cursor-pointer'>
                   <span className='undeline'>Forgot password?</span>
                 </p>
                 <p className='text-xs sm:text-sm text-center text-gray-500'>
-                  No account? <span className='underline'>Register Here</span>
+                  No account?
+                  <Link to='/register'>
+                    <span className='underline cursor'>Register Here</span>
+                  </Link>
                 </p>
               </div>
             </form>

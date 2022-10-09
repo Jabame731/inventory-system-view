@@ -1,8 +1,6 @@
 import React from 'react';
 import SideBar from './SideBar';
-
 import profileImageUser from '../assets/imagenalami.jpg';
-
 import { BsCurrencyDollar } from 'react-icons/bs';
 import { BsPeople } from 'react-icons/bs';
 import { TbBox } from 'react-icons/tb';
@@ -10,7 +8,7 @@ import { BsFillBarChartFill } from 'react-icons/bs';
 
 const DashBoard = () => {
   return (
-    <div class='flex flex-row'>
+    <div class='flex flex-row '>
       <SideBar />
       <div class='basis-full p-5 d-flex flex-col items-start'>
         <div className='flex flex-row justify-between items-center h-[60px]'>
